@@ -29,48 +29,4 @@ print(lst)
 n=10
 print([i*i for i in range(1,11)if i%2!=0])
 
-#strong number
-num=int(input("Enter the number:"))
-t=num
-sum=0
-while(num>0):
-    rem=num%10
-    fact=1
-    for i in range(1,rem+1):
-        fact*=i
-    sum+=fact
-    num//=10
-if sum==t:
-    print(t,"is strong number")
-else:
-    print(t,"is not strong number")
-
-#happy number
-n=int(input("Enter a number:"))
-visit=set()
-while n!=1 and n not in visit:
-    visit.add(n)
-    sum=0
-    temp=n
-    while temp>0:
-        d=temp%10
-        sum+=d**2
-        temp//=10
-    n=sum
-if n==1:
-    print("Happy")
-else:
-    print("Not happy")
-
-#nivens number
-n=int(input("Enter a number:"))
-sum=0
-while(n>0):
-    rem=n%10    
-    sum+=rem
-    n//=10
-if n%sum==0:
-    print("is nivens number")
-else:
-    print("is not nivens number")    
 
